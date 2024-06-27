@@ -25,11 +25,7 @@
                             <div class="triangle-btn triangle-down" data-property="down"></div>
                         </div>
                         <div class="field-description">
-                            <div class="question-mark"></div>
-                            <label for="kedo-field">Количество сотрудников в КЭДО</label>
-                            <div class="question-hint">
-                                <p>Сотрудники, которые могут подписывать документы с помощью ЭП</p>
-                            </div>
+                            <label for="kedo-field">Количество сотрудников</label>
                         </div>
                     </div>
                     <div class="field-area field-area-3">
@@ -46,9 +42,9 @@
                         </div>
                         <div class="field-description">
                             <div class="question-mark"></div>
-                            <label for="number-of-connections-field">Количество одновременных подключений к веб-версии</label>
+                            <label for="number-of-connections-field">Количество одновременных подключений с ПК</label>
                             <div class="question-hint">
-                                <p>Подключение для кадровых работников, администраторов, руководителей всех уровней</p>
+                                <p>Одновременных подключений к базе пользователей с ролями: внутренний клиент, сотрудник СБ и др.</p>
                             </div>
                         </div>
                     </div>
@@ -64,605 +60,1675 @@
         <div class="sticky-rink">
             <article class="rates-wrapper">
                 <table class="table-rates">
-                    <tbody><tr class="header-row">
-                        <th>Тарифы</th>
-                        <td>Быстрый старт</td>
-                        <td>Расширенный</td>
-                        <td>Корпоративный</td>
-                    </tr>
-                    <tr class="prices-row">
-                        <th>Стоимость</th>
-                        <td>
-                            <div class="prices">
-                                <span class="price discount fast-start">74 800 руб</span>
-                            </div>
-                            <span class="period">за 1 месяц</span>
-                        </td>
-                        <td>
-                            <div class="prices">
-                                <span class="price discount extended">112 200 руб</span>
-                            </div>
-                            <span class="period">за 1 месяц</span>
-                        </td>
-                        <td class="request-rate-flex">
-                            <span class="price">по запросу</span>
-                        </td>
-                    </tr>
-                    </tbody></table>
+                    <tbody>
+                        <tr class="header-row">
+                            <th>Тарифы</th>
+                            <td>Быстрый старт</td>
+                            <td>Расширенный</td>
+                            <td>Корпоративный</td>
+                        </tr>
+                        <tr class="prices-row">
+                            <th>Стоимость</th>
+                            <td>
+                                <div class="prices">
+                                    <span class="price discount fast-start">74 800 руб</span>
+                                </div>
+                                <span class="period">за 1 месяц</span>
+                            </td>
+                            <td>
+                                <div class="prices">
+                                    <span class="price discount extended">112 200 руб</span>
+                                </div>
+                                <span class="period">за 1 месяц</span>
+                            </td>
+                            <td class="request-rate-flex">
+                                <span class="price">по запросу</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
             <div class="functions-window">
                 <div class="functions-window__table-place">
                     <table class="functions-table">
-                        <tbody><tr class="pivot-header">
-                            <th colspan="3">Используемые электронные подписи (ЭП)</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="question-mark absolute-ruble"></div>
-                                <div class="question-hint">
-                                    <p>Бесплатный выпуск ЭП с помощью сайта Госуслуги и подписание документов с помощью приложения Госключ</p>
-                                </div>
-                                Использование ЭП - мобильное приложение Госключ
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Подключение электронной подписи на физическом носителе</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Использование ЭП УЦ (Калуга Астрал)</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr class="pivot-header">
-                            <th colspan="3">Шаблоны документов, сценарии и процессы КЭДО</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a class="rates-table-link" href="#" target="_Blank">Базовый набор форм обращений / заявлений (61 шт.)</a>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Базовый набор маршрутов согласования (40 шт.)</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Планирование, запрос, согласование отпусков (программный модуль)</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Прием на работу «Онлайн»</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Анкета кандидата при трудоустройстве</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Обходной лист при увольнении</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Обходной лист «Прием на работу»</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Настройка КЭДО для групп компаний (для нескольких юридических лиц)</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr class="pivot-header">
-                            <th colspan="3">Услуги консультантов на этапе запуска и поддержка</th>
-                        </tr>
-                        <tr>
-                            <td>Первичная настройка КЭДО для работы</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Базовое обучение функционалу</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Техническая поддержка</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Интеграция с кадровой системой 1С:ЗУП</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Настройка маршрутов согласования, добавление этапов</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Расширенное обучение для сотрудников кадровой службы</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Создание индивидуальных шаблонов заявлений</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Расширенная интеграция с 1С:ЗУП (поддержка матричной иерархии организационной структуры)</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Предпроектное обследование, формирование ТЗ</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Настройка дополнительных ролей доступа</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Доработка функционала продукта по требованиям Заказчика</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr class="pivot-header">
-                            <th colspan="3">Функциональность (базовая и дополнительная)</th>
-                        </tr>
-                        <tr>
-                            <td>Мобильное приложение «Личный кабинет сотрудника»</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="question-mark absolute-ruble"></div>
-                                <div class="question-hint">
-                                    <p>Для расширенного и корпоративного пакета на основании автоматической проверки и сравнения данных из 1С:ЗУП</p>
-                                </div>
-                                Поддержание организационной структуры в актуальном виде
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Конструктор заявлений и шаблонов документов</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Проверка данных при оформлении заявлений</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Базовая ролевая модель</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Конструктор маршрутов согласований</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Механизм согласования замещения сотрудников на время отсутствия</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/tick.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Дополнительные автоматические проверки данных при оформлении заявлений</td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/cross.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
-                                </figure>
-                            </td>
-                        </tr>
-                        </tbody></table>
+                        <tbody>
+                            <tr class="pivot-header">
+                                <th colspan="3">Профиль должности и модель компетенций</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Формируйте профили должности содержащие не только формальные характеристики (возраст, образование, стаж), но и компетенции с указанием минимального уровня их развития.</p>
+                                    </div>
+                                    Профиль должности
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Формируйте модели компетенций, классифицируйте компетенции, относя их к конкретным кластерам (корпоративные, профессиональные, управленческие), поддерживайте актуальность моделей компетенций для разных должностных позиций.</p>
+                                    </div>
+                                    Конструктор модели компетенций
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Создавайте библиотеку компетенций и характеристик для сотрудников, устанавливайте оценочные шкалы для автоматического формирования бланков оценки.</p>
+                                    </div>
+                                    Компетенции и характеристики
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Описывайте компетенции с использованием индикаторов эффективного поведения.</p>
+                                    </div>
+                                    Индикаторы эффективного поведения
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Ведите единую библиотеку компетенций, индикаторов, характеристик и группируйте их по вашей методологии. Никаких ограничений по количеству.</p>
+                                    </div>
+                                    Неограниченная библиотека компетенций и профильных характеристик
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Формирование и хранение индивидуального профиля сотрудника, включающего в себя не только персонифицированную информацию об уровне владения компетенциями и карьерном потенциале, но и историю развития и формирования компетенций.</p>
+                                    </div>
+                                    Индивидуальный профиль характеристик сотрудника
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Построение  рейтинга подразделений/департаментов по уровню развития компетенций.</p>
+                                    </div>
+                                    Обобщенная аналитика по уровню развития компетенций персонала по компании, подразделениям.
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Опираясь на многолетний опыт консалтинга на предприятиях различных отраслей, мы создали уникальный метод выполнения проектов по разработке модели компетенций.</p>
+                                    </div>
+                                    Консалтинг по разработке модели компетенций
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr class="pivot-header">
+                                <th colspan="3">Мероприятия обучения и развития</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Функционал подсистемы «Корпоративный университет» позволяет формировать перечень развивающих мероприятий, распределить их по категориям и видам, задать контрольные мероприятия и ссылки на внешние системы управления обучением, а также позволяет поддерживать в актуальном состоянии весь перечень и содержание материалов, расположенных на учебном портале.</p>
+                                    </div>
+                                    Ведение библиотеки развивающих мероприятий
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Добавление обучающего материала в онлайн библиотеку доступно в форматах:  офисные документы -word, doc, xls; файлы- pdf, ipeg, txt, видео-mp4; LMS-ссылки на внутренние или внешние сайты.</p>
+                                    </div>
+                                    База знаний
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Позволяет настраивать автоматическую авторизацию с внешними платформами обучения.</p>
+                                    </div>
+                                    Настройка прав доступа к LMS
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Возможность привязать обучающие материалы к любой компетенции или поведенческому индикатору.</p>
+                                    </div>
+                                    Сопоставление учебных мероприятий
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Создание тестов для оценки знаний сотрудников с различными вариациями обработки ответов. Привязка теста к любой компетенции и автоматическая фиксация итоговой оценки  по ней, установка лимита по времени и попыток прохождения теста.</p>
+                                    </div>
+                                    Наличие конструктора тестов
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Предусмотрено формирование отчетов по результатам тестирования как с индивидуальными результатами тестирования, так и обобщенной статистики по выбранным ответам, доле верных ответов, количестве полученных баллов, затраченному времени на тот или иной вопрос, количестве использованных попыток по каждому тесту, времени, затраченному на весь тест.</p>
+                                    </div>
+                                    Поддержка аналитических срезов по тестированию
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Импорт готовых тестов в систему из файла формата Excel.</p>
+                                    </div>
+                                    Автоматическая загрузка тестов в систему
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Возможность создания категорий развивающих мероприятий, например в соответствии с моделью «70-20-10».</p>
+                                    </div>
+                                    Распределений мероприятий по категориям
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Наличие конструктора для разработки мультимедийных, интерактивных электронных учебных курсов, плеер электронных курсов и тестов, мобильное обучение, работа с курсами формата SCORM, учет электронных сертификатов.</p>
+                                    </div>
+                                    Подключение функционала LMS с интегрированной конфигурацией 1С:Электронное обучение.Корпоративный университет, расширяющей возможности ПП «ТопФактор: Управление Талантами»
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr class="pivot-header">
+                                <th colspan="3">Оценка персонала</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Применение комплексного метода диагностики успешности сотрудника в профессиональной деятельности на основе оценки его поведения в различных смоделированных ситуациях.</p>
+                                    </div>
+                                    Оценка по модели компетенций (Assessment center)
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Ранжирование участников, анализ потенциальных зон роста и ресурсов для развития компетенций, формирование индивидуального профиля сотрудника по результатам оценки. Формирование индивидуального плана развития, предоставление сотруднику доступа к профилю оценки в личном кабинете сотрудника.</p>
+                                    </div>
+                                    Анализ и интерпретация результатов оценки по модели компетенции
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Данная процедура оценки позволяет получить информацию о деловых качествах сотрудника от всех, с кем он взаимодействует в ходе выполнения своих рабочих обязанностей (от руководителей, коллег, подчиненных). Такая оценка позволяет выявить сильные и слабые стороны, а также “точки роста” как для отдельных сотрудников, так и команды в целом.</p>
+                                    </div>
+                                    Типовая оценка 360 градусов (360degree feedback)
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Обработка результатов опроса, группировка оценок по категориям участников, формирование индивидуального профиля сотрудника по результатам оценки.</p>
+                                    </div>
+                                    Анализ и интерпретация результатов типовой оценки методом 360 градусов
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Индивидуальный подход к проведению опроса, помощь в создании моделей компетенций, возможность создания ИПР на основании результатов опроса.</p>
+                                    </div>
+                                    Сервис оценки сотрудников «360 градусов»
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Автоматизация процедуры оценки результативности сотрудников, которая подразумевает оценку персонала по ключевым показателям эффективности деятельности (KPI - Key Performance Indicators) с использованием системы «1С:Управление по целям и KPI»</p>
+                                    </div>
+                                    Оценка результативности (Performance Appraisal)
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Метод комплексной оценки сотрудника:Оценка KPI, Оценка Hard и Soft skills, планирование краткосрочной и долгосрочной перспективы развития</p>
+                                    </div>
+                                    Комплексная оценка (Performance review)
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Автоматизация процессов тестирования сотрудников и формирования отчетов с индивидуальными результатами. Психодиагностические тесты, для оценки личных качеств и определения мотивационного профиля.</p>
+                                    </div>
+                                    Профессиональное тестирование и психологические опросники
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Расширенный отчет по HR-характеристикам предназначен для проведения детального анализа оценок сотрудников в разрезе компетенций (характеристик, индикаторов поведения) за выбранный период. Также позволяет отследить срок подтверждения и актуализации оценки по выбранной компетенции (характеристике).</p>
+                                    </div>
+                                    Анализ по любым индивидуальным HR-характеристикам
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Позволяет реализовать онлайн обучение сотрудников. Для сотрудников компании, обеспечена возможность перехода к самостоятельному изучению онлайн курсов прохождению тестирования по итогам курса.</p>
+                                    </div>
+                                    Учебный центр
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Выстраивание маршрутов оценки и определение последовательности действий для реализации сложившейся практики на предприятии.</p>
+                                    </div>
+                                    Настройка конструктора процедуры оценки
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr class="pivot-header">
+                                <th colspan="3">Управление развитием персонала</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Индивидуальный план развития сформируется автоматически для сотрудника на основании результатов его оценки на соответствие определенной модели компетенций. По результатам оценки выявляются требующие развития компетенции, в план развития автоматически попадают мероприятия обучения и развития, сопоставленные с этими компетенциями.</p>
+                                    </div>
+                                    Формирование индивидуального плана развития
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Бизнес-процесс «Формирование ИПР» позволяет выстраивать маршруты согласования ИПР по различным сценариям.</p>
+                                    </div>
+                                    Процесс согласования плана развития
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Бизнес-процесс «Исполнение ИПР» позволяет фиксировать результаты исполнения плана развития, согласовывать их, контролировать сроки по выполнению мероприятий.</p>
+                                    </div>
+                                    Отслеживание исполнение индивидуального плана развития
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Рассылка уведомлений сотрудникам и их непосредственным руководителям о дате и времени участия как в очных, так и онлайн мероприятиях.</p>
+                                    </div>
+                                    Уведомление участников учебного процесса
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Возможность отслеживать участие в мероприятиях и фиксировать успеваемость сотрудников посредством оформления учебных ведомостей.</p>
+                                    </div>
+                                    Контроль посещаемости и успеваемости
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Бизнес-процесс «Планирование обучения» предназначен для координации работы руководителей при планировании обучающих мероприятий сотрудникам подразделения.</p>
+                                    </div>
+                                    Процесс планирования проведения обучающих мероприятий
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Фиксация учета затрат на обучение сотрудников. Для формирования бюджета на развивающие мероприятия необходимо указать какие из развивающих мероприятий будут проводиться внешними провайдерами и указать сумму затрат на мероприятие.</p>
+                                    </div>
+                                    Бюджетирование затрат
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Назначение обучающих и контрольных мероприятий сотрудникам.</p>
+                                    </div>
+                                    Учебная ведомость
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr class="pivot-header">
+                                <th colspan="3">Ввод в должность. Адаптационный трек</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Выстраивайте индивидуальный или массовый процесс адаптации, организуя вводное обучение сотрудника и прохождение всех вводных инструктажей при приеме или переводе сотрудника.</p>
+                                    </div>
+                                    Ввод в должность
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Формирование плана мероприятий по обучению и развитию для вновь принятых на должность сотрудников.</p>
+                                    </div>
+                                    Вводный инструктаж и план адаптационных мероприятий
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Автоматическое формирование плана вводного обучения и адаптации (на основании модели компетенций должности), а также обеспечение контроля исполнения плана адаптации.</p>
+                                    </div>
+                                    Формирование адаптационного плана
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Планирование работы наставников в ходе адаптации, фиксация  результатов их работы, а также оценка работы наставника по итогам периода адаптации.</p>
+                                    </div>
+                                    Наставничество
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>В ходе испытательного срока или по его окончанию наставник или непосредственный руководитель делает оценку новому сотруднику по чек-листу, который может содержать оценку развитых компетенций. На этом этапе принимается решение об успешности прохождения испытательного срока сотрудником.</p>
+                                    </div>
+                                    Прохождение испытательного срока
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Проведение в системе анкетирования сотрудника по прохождению адаптационных мероприятий, формирование анкеты по оценке работы наставника.</p>
+                                    </div>
+                                    Обратная связь по результатам адаптации
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Мобильное приложение для адаптации и обучения сотрудников с использованием технологии «1С: Предприятие. Элемент».</p>
+                                    </div>
+                                    Мобильное приложение для онбординга
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Маршрутизация адаптационного трека, добавление этапов для фиксации выдачи спецодежды, прохождения медосмотра, фиксация промежуточных результатов и т.д.</p>
+                                    </div>
+                                    Настройка адаптационного трека
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr class="pivot-header">
+                                <th colspan="3">Карьерное планирование и кадровый резерв</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Формирование кадровых позиций в системе для планирования преемственности по ним.</p>
+                                    </div>
+                                    Актуализация должностей кадрового резерва
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Заявки на вступление в кадровый резерв формирует руководитель, подбирающий себе приемников.</p>
+                                    </div>
+                                    Процесс выдвижения в кадровый резерв
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Заявки на включение в кадровый резерв по всем ключевым должностям формируются со стороны кандидатов.</p>
+                                    </div>
+                                    Сбор заявок на включение в кадровый резерв со стороны кандидатов
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Настройка маршрута согласования заявки на включение в кадровый резерв.</p>
+                                    </div>
+                                    Согласование заявки на включение в кадровый резерв
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>При формировании кадрового резерва реализован функционал, позволяющий обосновать включение сотрудника в группы: высокий потенциал и высокая производительность, за счет анализа текущего профиля претендента и исторических данных по его развитию, оценкам, уровню результативности за разные периоды.</p>
+                                    </div>
+                                    Фиксация сотрудников HiPo HiPro
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Формирование протоколов решений кадровой комиссии по каждому резервисту о включении/исключении.</p>
+                                    </div>
+                                    Формирование кадровых комитетов и комиссий
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Настройка маршрута согласования протоколов заседаний кадровых комитетов и комиссий в соответствии с регламентами компании.</p>
+                                    </div>
+                                    Маршрут согласования протоколов заседания кадровых комитетов
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Карьерный портал предусматривает визуализацию возможного карьерного роста сотрудника в компании. Карьерный портал строится для каждого сотрудника в соответствии с его текущей позицией и предусматривает варианты вертикального, горизонтального и экспертного роста.</p>
+                                    </div>
+                                    Карьерный портал
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Вы можете осуществлять ранжирование сотрудников с учетом уровня развития их компетенций и уровня их эффективности с использованием матриц 9Box и 12Box. Критерии ранжирования гибко настраиваются с учетом принятой практики в организации (например: результативность/потенциал).</p>
+                                    </div>
+                                    Ранжирование сотрудников
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Формирование консолидированного отчета по планированию преемственности и включении сотрудников в кадровый резерв.</p>
+                                    </div>
+                                    Консолидированный отчет по преемственности
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>У руководителей есть возможность отслеживать рейтинг по своим подчиненным, который отображает не только его результативность/потенциал, но и процент прохождение ИПР, Резюме, результаты последней оценки по компетенциям</p>
+                                    </div>
+                                    Рейтинг сотрудников
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr class="pivot-header">
+                                <th colspan="3">Интеграции и интерфейсы</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Реализация фонового кадрового обмена для поддержания актуальной организационной структуры. Перегрузка из системы 1С: ЗУП персональных реквизитов.</p>
+                                    </div>
+                                    Двусторонняя интеграция с 1С: ЗУП
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Перегрузка имеющихся компетенций, индикаторов, мероприятий.</p>
+                                    </div>
+                                    Интеграция с Microsoft Excel
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Реализация интеграционных адаптеров для экспорта и импорта об обучающем контенте и статистике прохождения мероприятий.</p>
+                                    </div>
+                                    Интеграция с LMS
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Предусмотрена бесшовная интеграция с программными продуктами экосистемы ТопФактор:1С: Управление по целям и KPI, ТопФактор: Подбор и адаптация персонала, ТопФактор: Кафетерий льгот и магазин бенефитов.</p>
+                                    </div>
+                                    Бесшовная интеграция с программными продуктами экосистемы ТопФактор
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Настройка визуализации отображения рабочего стола пользователя.</p>
+                                    </div>
+                                    Настройки интерфейсов (виджетов)
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Проектирование макета-HTML по вашему запросу, реализация взаимодействия интерфейса с платформой 1С.</p>
+                                    </div>
+                                    Разработка интерфейса пользователя в системе, с использованием HTML-форм
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr class="pivot-header">
+                                <th colspan="3">Услуги консультантов и настройка системы</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Настройка не более 5-ти моделей компетенций и 5-ти мероприятий.</p>
+                                    </div>
+                                    Перенос вашей методологии оценки и развития в программный продукт
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Оказываемые услуги по настройке, обслуживанию, обновлению.</p>
+                                    </div>
+                                    Техническая поддержка программного продукта
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Обучение типовому функционалу системы: от заполнения справочников до настроек бизнес-процесса.</p>
+                                    </div>
+                                    Обучение администраторов работе в программе
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Команда специалистов полностью готова к реализации нового функционала по вашему запросу.</p>
+                                    </div>
+                                    Реализация нового функционала, согласно вашим требованиям
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>Настройка маршрутов и этапов бизнес-процессов. Проектирование и реализация дополнительных процессов.</p>
+                                    </div>
+                                    Доработка конструктора бизнес-процессов
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/cross.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="question-mark absolute-ruble"></div>
+                                    <div class="question-hint">
+                                        <p>С  помощью отчета осуществляется контроль за сотрудниками и запущенными бизнес-процессами, отслеживаются статусы их выполнения.</p>
+                                    </div>
+                                    Контроль исполнения задач бизнес-процессов
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <img src="img/staff_selection/main-content/calculator/tick.svg" alt="">
+                                    </figure>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="footnote">
                         <figure>
-                            <img src="../img/staff_selection/main-content/calculator/ruble.svg" alt="">
+                            <img src="img/staff_selection/main-content/calculator/ruble.svg" alt="">
                         </figure>
                         <p>функциональность дополнительно согласовывается в ходе сбора требований по проекту и оплачивается отдельно</p>
                     </div>
@@ -671,8 +1737,7 @@
         </div>
         <div class="actions-place mist">
             <button class="calculator-actions show-functionality-btn" id="show-functionality-btn" type="button">Показать функционал</button>
-            <a class="calculator-actions download-comparison-table-link" id="download-comparison-table-link" href="/upload/kedo_saas.pdf
-" download="" target="_blank">Скачать таблицу сравнения</a>
+            <a class="calculator-actions download-comparison-table-link" id="download-comparison-table-link" href="#" download="" target="_blank">Скачать таблицу сравнения</a>
         </div>
     </div>
     <div class="rates-outer-block-mobile">
@@ -706,7 +1771,7 @@
                     </td>
                 </tr>
                 </tbody></table>
-            <a class="download-table-mobile" id="download-table-mobile" href="/upload/kedo_saas.pdf" download="" target="_blank">Скачать таблицу сравнения</a>
+            <a class="download-table-mobile" id="download-table-mobile" href="#" download="" target="_blank">Скачать таблицу сравнения</a>
         </article>
     </div>
 </section>

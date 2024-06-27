@@ -1,21 +1,21 @@
 @font-face {
     font-family: "HelveticaNeueCyr-Bold";
-    src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff");
+    src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff");
 }
 
 @font-face {
     font-family: "HelveticaNeueCyr-Black";
-    src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.woff");
+    src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.woff");
 }
 
 @font-face {
     font-family: "HelveticaNeueCyr-Medium";
-    src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff");
+    src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff");
 }
 
 @font-face {
     font-family: "HelveticaNeueCyr-Roman";
-    src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff");
+    src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff");
 }
 
 * {
@@ -1232,12 +1232,19 @@ div.social-links {
     pointer-events: none;
 }
 
+.question-hint {
+    width: 330px;
+}
+
 .question-hint > p {
     font-size: 16px;
 }
 
 .field-description > label {
     font-size: 18px;
+}
+
+.field-description > [for="number-of-connections-field"] {
     margin-left: 10px;
 }
 
@@ -1290,7 +1297,7 @@ div.social-links {
 .question-mark {
     min-width: 20px;
     height: 20px;
-    background: url('../img/staff_selection/main-content/calculator/question-mark.svg') no-repeat center / 100% 100%;
+    background: url('img/staff_selection/main-content/calculator/question-mark.svg') no-repeat center / 100% 100%;
     border-radius: 50%;
 }
 
@@ -1516,6 +1523,7 @@ div.social-links {
 .functions-table tr > td {
     display: flex;
     align-items: center;
+    padding: 15px 0;
 }
 
 .functions-table tr > td:first-child {
@@ -1579,6 +1587,7 @@ article.fixed-header-bg-color * {
 .functions-table .question-hint {
     left: calc(100% + 15px);
     top: 0;
+    transform: translateY(-40%);
 }
 
 .footnote {
