@@ -1,0 +1,531 @@
+@media (max-width: 1144px) {
+    .demo-test-blue-block__text {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-content-menu__list a {
+        width: 324px;
+    }
+
+    .functions-table tr > td:first-child {
+        min-width: 288px;
+    }
+
+    .functions-table tr > td:not(:first-child) {
+        min-width: 222px;
+    }
+
+    .table-rates th {
+        width: 300px;
+    }
+
+    .header-row > td {
+        font-size: 25px;
+    }
+
+    .examples-slider-wrapper {
+        width: 888px;
+    }
+
+    .field-area {
+        width: 314px;
+    }
+
+    .new-form-btn {
+        padding: 20px 44px;
+    }
+
+    .footer-page {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .grid-block {
+        grid: repeat(4, 1fr) / repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 983px) {
+    .header-navigation-menu,
+    .menu-panel {
+        display: none;
+    }
+
+    .burger_btn {
+        display: block;
+    }
+
+    .demo-test__container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .demo-test-blue-block__text {
+        margin: 10px 0 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .demo-test-blue-block__text > * {
+        text-align: center;
+    }
+}
+
+@media (max-width: 880px) {
+    .search-area {
+        display: none;
+    }
+
+    .hidden-search-area {
+        display: block;
+    }
+
+    .header-search-btn {
+        left: 0;
+        background-size: 70% 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content-menu__list {
+        justify-content: center;
+    }
+
+    .main-content-menu__list > li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .main-content-menu__list > li,
+    .main-content-menu__list a {
+        width: 100%;
+    }
+
+    .stages {
+        padding: 80px 10px;
+    }
+
+    .field-area {
+        width: 230px;
+    }
+
+    .fixed-header-bg-color .table-rates th {
+        padding-left: 46px;
+        font-size: 16px;
+        padding-right: 82px;
+        width: 218px;
+    }
+
+    .fixed-header-bg-color .header-row > td {
+        font-size: 18px;
+    }
+
+    .table-rates th {
+        font-size: 20px;
+        width: 225px;
+    }
+
+    .header-row > td {
+        font-size: 19px;
+    }
+
+    .functions-table tr {
+        padding: 25px 0;
+    }
+
+    .functions-table tr > td:first-child {
+        min-width: 206px;
+    }
+
+    .functions-table tr > td:not(:first-child) {
+        min-width: 164px;
+    }
+
+    .absolute-ruble {
+        top: auto;
+        bottom: calc(100% + 4px);
+    }
+
+    .actions-place {
+        justify-content: space-between;
+    }
+
+    .calculator-actions {
+        font-size: 15px;
+    }
+
+    .examples-slider-wrapper {
+        width: 650px;
+    }
+
+    .contacts {
+        font-size: 15px;
+    }
+
+    .footer-page__navigation {
+        padding-left: 30px;
+    }
+
+    .footer-page__logo-img {
+        width: 210px;
+    }
+
+    .describe-btn,
+    .footer-page__demo-version-link {
+        font-size: 13px;
+    }
+
+    .solutions-container p,
+    .solution-item > ul > li {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 675px) {
+    .grid-block {
+        grid: repeat(9, 1fr) / 1fr;
+    }
+}
+
+@media (max-width: 661px) {
+    .phone-number {
+        font-size: 15px;
+    }
+
+    .swiper {
+        height: 507px;
+    }
+
+    .slide-content > h2 {
+        font-size: 20px;
+    }
+
+    .slide-content > p {
+        font-size: 18px;
+        text-transform: initial;
+    }
+
+    .slide-content > a {
+        font-size: 15px;
+    }
+
+    .main-content-menu__list > li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .header-demo-btn {
+        padding: 15px 13px;
+    }
+
+    .solutions-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo-test-blue-block__text > h2 {
+        font-size: 27px;
+    }
+
+    .ipad {
+        width: 404px;
+    }
+
+    .slide-content > a,
+    .field-area,
+    .new-form-btn-2,
+    .footer-row-content > div {
+        width: 100%;
+    }
+
+    .form-field {
+        padding-right: 35px;
+    }
+
+    .order-call-link,
+    .new-form-btn-1,
+    .rates-outer-block,
+    .footer-page__demo-version-link,
+    .contacts,
+    .showed-link,
+    .rates-outer-block {
+        display: none;
+    }
+
+    .new-calculator-form__new-form-fields,
+    .new-form-btns,
+    .triangle-btn,
+    .rates-outer-block-mobile,
+    .hidden-link {
+        display: block;
+    }
+
+    .examples-slider-wrapper,
+    .example-slide {
+        width: 532px;
+    }
+
+    .field-description > label {
+        font-size: 16px;
+    }
+
+    .footer-row-content {
+        flex-direction: column;
+    }
+
+    .footer-page__navigation {
+        padding-left: 0;
+    }
+
+    .footer-page__describe {
+        order: -1;
+    }
+
+    .footer-navigation__list,
+    .footer-navigation__list > li:first-child,
+    .footer-page__info {
+        display: flex;
+    }
+
+    .footer-navigation__list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .footer-navigation__list > li:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    .footer-navigation__list > li:first-child {
+        align-items: flex-end;
+    }
+
+    .footer-navigation__list > li > a {
+        font-size: 12px;
+    }
+
+    .footer-navigation__list > li {
+        text-align: center;
+    }
+
+    .footer-page__info {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-page__info,
+    .footer-page__navigation {
+        margin-top: 30px;
+    }
+
+    .footer-page__logo-img {
+        width: 160px;
+    }
+
+    .footer-hidden-row-content > .offer-block:not(:last-child),
+    .footer-hidden-row-content > .footer-privacy-policy {
+        padding-top: 10px;
+    }
+
+    .footer-row-2 {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-hidden-row-content > .footer-privacy-policy {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-hidden-row-content > .footer-privacy-policy > a {
+        width: 100%;
+    }
+
+    .footer-privacy-policy-link:last-child {
+        margin-top: 25px;
+    }
+
+    .footer-hidden-row-content > .license-block {
+        justify-content: center;
+    }
+
+    .footer-hidden-row-content > .offer-block {
+        margin-top: 0;
+    }
+
+    .main-content > footer .footer-row:last-child {
+        padding-bottom: 10px;
+    }
+
+    .new-form-btn-2:hover {
+        background-color: #0072BC;
+        color: #fff;
+    }
+
+    .new-form-btn-2:active {
+        background-color: transparent;
+        color: #0072BC;
+    }
+
+    .solution-item {
+        margin-top: 57px;
+    }
+
+    .solutions-container p,
+    .solution-item > ul > li {
+        font-size: 16px;
+    }
+
+    .discount-new-price {
+        font-size: 18px;
+    }
+
+    .discount-old-price {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(100% + 10px);
+    }
+
+    .discount-deadline {
+        left: initial;
+        right: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+}
+
+@media (max-width: 501px) {
+    .examples-slider-wrapper,
+    .example-slide {
+        width: 383px;
+    }
+}
+
+@media (max-width: 426px) {
+    .swiper {
+        height: 340px;
+    }
+
+    .slide-content-wrapper {
+        padding: 0 69px 30px;
+    }
+
+    .main-content-menu__list a {
+        padding: 16px 0;
+    }
+
+    .examples-slider-wrapper,
+    .example-slide {
+        width: 311px;
+    }
+}
+
+@media (max-width: 376px) {
+    .logo-img {
+        width: 135px;
+    }
+
+    .header-demo-btn {
+        padding: 8px;
+    }
+
+    .slide-content > a {
+        font-size: 12px;
+        padding: 11px 34px;
+    }
+
+    .slide-content > p {
+        padding: 25px 0;
+    }
+
+    .main-content-menu__list a {
+        padding: 10px 0;
+    }
+
+    .ipad {
+        width: 356px;
+    }
+
+    .demo-test-blue-block__text > h2 {
+        font-size: 25px;
+    }
+
+    .new-calculator-form {
+        margin-top: 30px;
+    }
+
+    .download-table-mobile {
+        font-size: 17px;
+    }
+
+    .examples-slider-wrapper {
+        width: 274px;
+    }
+
+    .demo-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 321px) {
+    .swiper {
+        height: 274px;
+    }
+
+    .slide-content > h2 {
+        font-size: 16px;
+    }
+
+    .slide-content > p {
+        font-size: 11px;
+    }
+
+    .slide-content > a {
+        padding: 10px 12px;
+    }
+
+    .slide-content-wrapper {
+        padding-bottom: 35px;
+    }
+
+    .header-demo-btn {
+        font-size: 10px;
+    }
+
+    .demo-link {
+        padding: 16px 22px;
+        font-size: 11px;
+    }
+
+    .ipad {
+        width: 305px;
+    }
+
+    .calculate-btn {
+        font-size: 16px;
+    }
+
+    .download-table-mobile {
+        font-size: 14px;
+    }
+
+    .field-description > label {
+        font-size: 14px;
+    }
+
+    .examples-slider-wrapper {
+        width: 220px;
+    }
+
+    .footer-page__demo-version-link.hidden-link {
+        padding: 15px 6px;
+    }
+}
